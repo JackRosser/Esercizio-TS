@@ -21,7 +21,7 @@ class User implements Smartphone {
     }
 
     chiamata(minuti: number) {
-        const costoChiamata = 0.20 * minuti;
+        const costoChiamata = 0.50 * minuti;
         if (this.credito >= costoChiamata) {
             this.credito -= costoChiamata;
             this.numeroChiamate += minuti;

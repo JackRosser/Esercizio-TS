@@ -9,7 +9,7 @@ var User = /** @class */ (function () {
         this.credito += importo;
     };
     User.prototype.chiamata = function (minuti) {
-        var costoChiamata = 0.20 * minuti;
+        var costoChiamata = 0.50 * minuti;
         if (this.credito >= costoChiamata) {
             this.credito -= costoChiamata;
             this.numeroChiamate += minuti;
